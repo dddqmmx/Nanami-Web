@@ -1,6 +1,10 @@
 *{
     margin: 0;
 }
+body * {
+    box-sizing: border-box;
+    word-break: break-word;
+}
 html,body{
     padding: 0;
     margin: 0;
@@ -70,11 +74,11 @@ div{
 .razor_bottom{
     position: absolute;
     max-width: 100%;
-    bottom: -200px;
+    bottom: -8vh;
 }
 .section{
     width: 100%;
-    height: 200px;
+    height: 8vh;
     background: #00000f;
 }
 .background1{
@@ -88,9 +92,76 @@ div{
     background: #fcee0a;
 }
 .introduceDiv{
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 1720px;
+    padding: 84px 28px 0;
+}
+.introduceTitle{
+    color: #000;
+    font-family: BlenderProBold,sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 54px;
+    padding: 0 24px;
+    text-align: center;
+}
+.introduceText{
+    font-family: BlenderProBook,sans-serif;
     width: 100%;
-    height: 100%;
-    background: aqua;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    align-content: stretch;
+    align-items: stretch;
+    overflow: hidden;
+}
+.highlights__list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.highlights__item {
+    display: flex;
+    flex-flow: row wrap;
+    width: calc(50% - 24px);
+    background-color: #00f0ff;
+    border: 5px solid #000;
+    margin: 12px;
+    padding: 12px;
+    position: relative;
+}
+.image {
+    position: relative;
+    width: 100%;
+ }
+.image1,.image2{
+    left: 50%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.image1{
+    background-image: url("../image/nanami01.jpg");
+}
+.image2{
+    background-image: url("../image/nanami02.jpg");
+}
+.highlights__item-text{
+    margin-top: 20px;
+    padding-right: 48px;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+    padding-left: 64px;
+    width: 100%;
 }
 .background3{
     width: 100vw;
