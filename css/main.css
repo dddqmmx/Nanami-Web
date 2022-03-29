@@ -134,8 +134,12 @@ div{
     padding: 12px;
     position: relative;
 }
+.highlights__item:hover {
+    background: white;
+}
 .image {
     position: relative;
+    height: 550px;
     width: 100%;
  }
 .image1,.image2{
